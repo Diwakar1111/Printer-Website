@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AboutStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="img/png.ico" />
+    <title>Replicate - About Us</title>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img
+          src="img/home-design/logoTransparent-img.png"
+          width="200px"
+          class="logo"
+          alt=""
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="HomeIndex.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search..." />
+            <div class="search-icon">&#128269;</div>
+          </div>
+          <li>
+            <a><i class="far fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="acontainer">
+      <div class="abtcontainer">
+        <h1>About Us</h1>
+        <p>
+          Replicate delivers top-notch printing solutions with a focus on quality and innovation. Our range includes high-speed laser printers and versatile all-in-one models. Whether you're a small business or a large enterprise, we provide reliable, efficient printing tailored to your needs. Experience precision and performance with Replicate, your trusted partner for all printing requirements.
+        </p>
+      </div>
+    </div>
+    
+    <br/>
+    <h1 style="text-align: center;">Our Members</h1>
+    <section class="body" id="body">
+      <div class="container">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/team1.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Pelav Poudyal</h2>
+              <p>
+                I am currently pursuing my Bachelor's degree in Computing from Itahari international college. I Reside in the Capital city of Province no. 1, Biratnagar. My passion for coding and my love for computers has made me choose this degree and I'm ready to learn and expand my knowledge about the Digital World.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/team2.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Diwakar Yadav</h2>
+              <p>
+                I am Diwakar Yadav, an Bsc(hons)Computing student with a strong
+                passion for technology. . My goal is to pursue a career in
+                Computing. I am also a proactive learner, always seeking new
+                challenges and opportunities to grow in the technology industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/team3.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Rohit Shah</h2>
+              <p>
+                Hello! its me Rohit Shah,a Bsc students of Ithari International College with a straight passion in Web-designer and as well as Coding.And my goal is to become to a Web-Designer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/team4.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Saksham Neupane</h2>
+              <p>
+                I am currently studying at Itahari International College,
+                pursuing a BSc (Hons) in Computing. I reside in Itahari-4,
+                Halgada, Nepal. In addition to my academic pursuits, I have a
+                keen interest in coding. Looking forward, My current goal is to
+                achieve as much skills as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/team5.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Ankit Baral</h2>
+              <p>
+                Ankit Baral, from Salbani, Sunsari, is pursuing BSc Hons Computing at Itahari International College. Focused on Information Technology, he is dedicated to mastering skills for success in the dynamic computing industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <footer>
+        <div class="footercontainer">
+          <div class="socialIcons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+         
+            
+        
+        
+          <div class="footerNav">
+            <ul>
+              <li><a href="HomeIndex.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footerBottom">
+            <p class="last">
+              Copyright&copy; 2023 Replicate. All rights reserved.<span
+                class="designer"
+              >
+                - Designed by Team REPLICATE</span
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+      
+        //form validation
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+      
+        if (name === "" || email === "" || phone === "" || message === "") {
+          alert("All fields are required!");
+          return;
+        }
+      
+        alert("Your form has been submitted");
+        document.getElementById("contactForm").reset();
+      }
+      </script>
+      <script src="active.js"></script>
+  </body>
+</html>

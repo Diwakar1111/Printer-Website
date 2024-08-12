@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="img/png.ico">
+  <title>Contact Us</title>
+</head>
+<body>
+  <!-- global style -->
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #d1d1d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+h5 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* contact us details */
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style-type: none; /* Add this line to remove bullet points */
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.35s;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 37%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+/* for contact */
+section {
+    flex: 1;
+    padding: 20px;
+}
+.contactmain {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* contact form  */
+form {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(81, 101, 108);
+  
+}
+.cform{
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #ff0000;
+  color: rgb(253, 248, 248);
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+color: #000000;
+  background-color: #ffffff;
+}
+.registerbtn{
+  background-color: rgb(209, 24, 24);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.registerbtn:hover {
+  background-color: #563c3c;
+}
+footer {
+  background-color: #171717;
+  border-width: 100%;
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+/* Style social icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Added gap between icons */
+}
+
+.socialIcons a {
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: #020202;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: #7d7f7fa1;
+  transition: 0.5s;
+}
+
+/*  footer navigation */
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  list-style: none;
+}
+
+.footerNav ul li {
+  margin: 0 20px; /* Adjusted margin */
+}
+
+.footerNav ul li a {
+  color: #fff3f3;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+  background-color: #7d7f7fa1;
+}
+
+/* Style footer bottom */
+.footerBottom p {
+  color: #ffffff;
+}
+
+.designer {
+  color: rgba(91, 135, 255, 0.726);
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.last {
+  color: #dddddd;
+  background-color: #171717;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+  </style>
+  <section id="header">
+    <a href="#"
+      ><img
+        src="img/home-design/logoTransparent-img.png"
+        width="200px"
+        class="logo"
+        alt=""
+    /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="HomeIndex.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <div class="search-icon">&#128269;</div>
+        </div>
+        <li>
+          <a><i class="far fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <main class="contactmain">
+    <section>
+       <h5> <b>Contact Us</h5></b>
+        <p>Address: Baliya, Itahari, Nepal</p>
+        <p>Email: feedback@Replicate.com</p>
+        <p>Phone: +977-123-4567892</p>
+    </section>
+    <!-- contact form start -->
+    <form class="cform" onsubmit="validateAndSubmit()">
+        <h3>MESSAGE US</h3>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="Email">Email</label>
+        <input type="Email" id="Email" name="Email" placeholder="e.g: example@gmail.com">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your Feedback/Queries" style="height:200px"></textarea>
+
+        <button type="submit" class="registerbtn">SUBMIT</button>
+    </form>
+     <!-- contact form end -->
+</main>
+<section>
+<footer>
+  <!-- footer container of social icons -->
+  <div class="footercontainer">
+      <div class="socialIcons">
+          <a href='#'><i class="fab fa-facebook"></i></a>
+          <a href='#'><i class="fab fa-twitter"></i></a>
+          <a href='#'><i class="fab fa-instagram"></i></a>
+          <a href='#'><i class="fab fa-linkedin"></i></a>
+      </div>
+          <!-- quick links footer -->
+      <div class="footerNav">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+          </ul>
+      </div>
+      <!-- footer bottom -->
+      <div class="footerBottom">
+          <p class="last">Copyright&copy; 2023 Replicate. All rights reserved.<span class="designer"> - Designed by Team REPLICATE</span></p>
+      </div> 
+  </div>
+</footer>
+</section>
+<!-- form script -->
+<script>
+     function validateAndSubmit() {
+        // Get values from input fields
+        var firstName = document.getElementById("fname").value.trim();
+        var lastName = document.getElementById("lname").value.trim();
+        var placeName = document.getElementById("Email").value.trim();
+        var feedback = document.getElementById("subject").value.trim();
+
+        
+        if (firstName === '' || lastName === '' || Email === '' || feedback === '') {
+            alert("All fields are required!");
+            return false; 
+        }
+
+        showAlert();
+        return true; 
+    }
+
+    function showAlert() {
+        alert("Your form has been submitted!");
+    }
+  </script>
+<script src="active.js"></script>
+</body>
+</html>
